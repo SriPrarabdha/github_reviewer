@@ -168,9 +168,9 @@ export async function POST(
             const $ = cheerios.load(response.data);
             const lis = $("a[itemprop = 'name codeRepository']");
             lis.each((index, el) => { 
-            if(typeof($(el).attr('href'))!= undefined){
-                repo_url.push($(el).attr('href'))
-            }
+            
+            repo_url.push($(el).attr('href')!)
+            
             })
       });
       console.log(repo_url);
