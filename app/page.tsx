@@ -1,5 +1,7 @@
-import Image from 'next/image'
+import Main from "./component/Main"
 
 export default function Home() {
-  return <div>testing</div>
+  return <div>
+    <Main />
+  </div>
 }
