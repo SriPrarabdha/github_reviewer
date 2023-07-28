@@ -88,7 +88,7 @@ async function scarpeData(element:GithubFile) {
 }
 
 const analyze_repo = async(url:string , repo_name : string) =>{
-  const accessToken = "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"
+  const accessToken = process.env.GITHUB_ACCESS_TOKEN
 
   const header = {
     Authorization: `Bearer ${accessToken}`,
